@@ -83,6 +83,7 @@ $dataComics = $client->getComics($resultsPerPage, $page, $params);
       <ul class="pagination pagination-lg justify-content-center">
         @if ($page > 1)
           <li class="page-item"><a class="page-link" href="comics?page={{ ($page - 1) }}">Previous Page</a></li>
+          <li class="page-item"><a class="page-link" href="comics">Reset</a></li>
         @endif
         <li class="page-item"><a class="page-link" href="comics?page={{ ($page + 1) }}">Next Page</a></li>
       </ul>
